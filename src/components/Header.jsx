@@ -1,4 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [profileCardVisible, setProfileCardVisible] = useState(false);
@@ -54,33 +56,35 @@ export default function Header() {
           </div>
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex-shrink-0 flex items-center">
-              <h3 className="text-white font-semibold">VST APP</h3>
+              <Link to="/">
+                <h3 className="text-white font-semibold">VST APP</h3>
+              </Link>
             </div>
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
-                <a
-                  href="#"
+                <Link
+                  to="/disciplines"
                   className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Dashboard
+                  Дисциплины
+                </Link>
+                <a
+                  href="#"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Моя группа
                 </a>
                 <a
                   href="#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Team
+                  Преподаватели
                 </a>
                 <a
                   href="#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Projects
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Calendar
+                  Календарь
                 </a>
               </div>
             </div>
@@ -135,21 +139,21 @@ export default function Header() {
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     role="menuitem"
                   >
-                    Your Profile
+                    Профиль
                   </a>
                   <a
                     href="#"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     role="menuitem"
                   >
-                    Settings
+                    Настройки
                   </a>
                   <a
                     href="#"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     role="menuitem"
                   >
-                    Sign out
+                    Выход
                   </a>
                 </div>
               )}

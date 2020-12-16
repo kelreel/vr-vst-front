@@ -1,9 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Disciplines() {
   return (
-    <div className="flex flex-col">
-        {/* Основная таблица */}
+    <div className="flex flex-col lg:flex-wrap justify-center content-center align-center">
+      {/* Основная таблица */}
       <h2 className="mt-10 mb-10 text-center text-3xl font-bold text-gray-900">
         Дисциплины
       </h2>
@@ -32,7 +34,9 @@ export default function Disciplines() {
                     Status
                   </th>
                   <th scope="col" className="relative px-6 py-3">
-                    <span className="sr-only">Открыть</span>
+                    <Link to="/discipline" className="sr-only">
+                      Открыть
+                    </Link>
                   </th>
                 </tr>
               </thead>
@@ -82,12 +86,12 @@ export default function Disciplines() {
                     </span>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                    <a
-                      href="#"
+                    <Link
+                      to="/discipline"
                       className="text-indigo-600 hover:text-indigo-900"
                     >
                       Открыть
-                    </a>
+                    </Link>
                   </td>
                 </tr>
 
@@ -134,12 +138,12 @@ export default function Disciplines() {
                     </span>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                    <a
-                      href="#"
+                    <Link
+                      to="/discipline"
                       className="text-indigo-600 hover:text-indigo-900"
                     >
                       Открыть
-                    </a>
+                    </Link>
                   </td>
                 </tr>
 
@@ -186,12 +190,12 @@ export default function Disciplines() {
                     </span>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                    <a
-                      href="#"
+                    <Link
+                      to="/discipline"
                       className="text-indigo-600 hover:text-indigo-900"
                     >
                       Открыть
-                    </a>
+                    </Link>
                   </td>
                 </tr>
               </tbody>
@@ -240,6 +244,112 @@ export default function Disciplines() {
                       <div className="flex-shrink-0 h-10 w-10">
                         <img
                           className="h-10 w-10 rounded-full"
+                          src="https://picsum.photos/id/41/200"
+                          alt=""
+                        />
+                      </div>
+                      <div className="ml-4">
+                        <div className="text-sm font-medium text-gray-900">
+                          Организация ЭВМ
+                        </div>
+                        <div className="text-sm text-gray-500">Основы</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <div className="flex items-center">
+                      <div className="flex-shrink-0 h-10 w-10">
+                        <img
+                          className="h-10 w-10 rounded-full"
+                          src="https://picsum.photos/id/46/200"
+                          alt=""
+                        />
+                      </div>
+                      <div className="ml-4">
+                        <div className="text-sm font-medium text-gray-900">
+                          Зеленский П.В.
+                        </div>
+                        <div className="text-sm text-gray-500">
+                          zelensky@nntu.ru
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-300 text-green-900">
+                      Отлично
+                    </span>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                    <a
+                      href="#"
+                      className="text-indigo-600 hover:text-indigo-900"
+                    >
+                      Открыть
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <div className="flex items-center">
+                      <div className="flex-shrink-0 h-10 w-10">
+                        <img
+                          className="h-10 w-10 rounded-full"
+                          src="https://picsum.photos/id/54/200"
+                          alt=""
+                        />
+                      </div>
+                      <div className="ml-4">
+                        <div className="text-sm font-medium text-gray-900">
+                          Паттерны проектирования
+                        </div>
+                        <div className="text-sm text-gray-500">
+                          Программирование
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <div className="flex items-center">
+                      <div className="flex-shrink-0 h-10 w-10">
+                        <img
+                          className="h-10 w-10 rounded-full"
+                          src="https://picsum.photos/id/55/200"
+                          alt=""
+                        />
+                      </div>
+                      <div className="ml-4">
+                        <div className="text-sm font-medium text-gray-900">
+                          Жевнерчук Д.В.
+                        </div>
+                        <div className="text-sm text-gray-500">
+                          d.zhevn@nntu.ru
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
+                      Удовлетворительно
+                    </span>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                    <a
+                      href="#"
+                      className="text-indigo-600 hover:text-indigo-900"
+                    >
+                      Открыть
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <div className="flex items-center">
+                      <div className="flex-shrink-0 h-10 w-10">
+                        <img
+                          className="h-10 w-10 rounded-full"
                           src="https://picsum.photos/id/31/200"
                           alt=""
                         />
@@ -276,110 +386,6 @@ export default function Disciplines() {
                   <td className="px-6 py-4 whitespace-nowrap">
                     <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                       Хорошо
-                    </span>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                    <a
-                      href="#"
-                      className="text-indigo-600 hover:text-indigo-900"
-                    >
-                      Открыть
-                    </a>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="px-6 py-4 whitespace-nowrap">
-                    <div className="flex items-center">
-                      <div className="flex-shrink-0 h-10 w-10">
-                        <img
-                          className="h-10 w-10 rounded-full"
-                          src="https://picsum.photos/id/11/200"
-                          alt=""
-                        />
-                      </div>
-                      <div className="ml-4">
-                        <div className="text-sm font-medium text-gray-900">
-                          UI-дизайн
-                        </div>
-                        <div className="text-sm text-gray-500">
-                          Создание интерфейсов
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
-                    <div className="flex items-center">
-                      <div className="flex-shrink-0 h-10 w-10">
-                        <img
-                          className="h-10 w-10 rounded-full"
-                          src="https://picsum.photos/id/16/200"
-                          alt=""
-                        />
-                      </div>
-                      <div className="ml-4">
-                        <div className="text-sm font-medium text-gray-900">
-                          Цыбульская Е.В.
-                        </div>
-                        <div className="text-sm text-gray-500">e.v@nntu.ru</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
-                    <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                      Active
-                    </span>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                    <a
-                      href="#"
-                      className="text-indigo-600 hover:text-indigo-900"
-                    >
-                      Открыть
-                    </a>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="px-6 py-4 whitespace-nowrap">
-                    <div className="flex items-center">
-                      <div className="flex-shrink-0 h-10 w-10">
-                        <img
-                          className="h-10 w-10 rounded-full"
-                          src="https://picsum.photos/id/24/200"
-                          alt=""
-                        />
-                      </div>
-                      <div className="ml-4">
-                        <div className="text-sm font-medium text-gray-900">
-                          Методы Data Mining
-                        </div>
-                        <div className="text-sm text-gray-500">Оптимизация</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
-                    <div className="flex items-center">
-                      <div className="flex-shrink-0 h-10 w-10">
-                        <img
-                          className="h-10 w-10 rounded-full"
-                          src="https://picsum.photos/id/25/200"
-                          alt=""
-                        />
-                      </div>
-                      <div className="ml-4">
-                        <div className="text-sm font-medium text-gray-900">
-                          Суркова А.С.
-                        </div>
-                        <div className="text-sm text-gray-500">
-                          surkova.an@nntu.ru
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
-                    <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                      Active
                     </span>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
