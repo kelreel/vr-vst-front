@@ -68,24 +68,12 @@ export default function Header() {
                 >
                   Дисциплины
                 </Link>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Моя группа
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Преподаватели
-                </a>
-                <a
-                  href="#"
+                <Link
+                  to="/calendar"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Календарь
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -134,13 +122,13 @@ export default function Header() {
                   aria-orientation="vertical"
                   aria-labelledby="user-menu"
                 >
-                  <a
-                    href="#"
+                  <Link
+                    to="/profile"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     role="menuitem"
                   >
                     Профиль
-                  </a>
+                  </Link>
                   <a
                     href="#"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"

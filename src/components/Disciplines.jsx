@@ -52,9 +52,12 @@ export default function Disciplines() {
                         />
                       </div>
                       <div className="ml-4">
-                        <div className="text-sm font-medium text-gray-900">
+                        <Link
+                          to="/discipline"
+                          className="text-sm font-medium text-gray-900 hover:text-indigo-900"
+                        >
                           ПОВС
-                        </div>
+                        </Link>
                         <div className="text-sm text-gray-500">
                           Администрирование
                         </div>
@@ -106,9 +109,12 @@ export default function Disciplines() {
                         />
                       </div>
                       <div className="ml-4">
-                        <div className="text-sm font-medium text-gray-900">
-                          UI-дизайн
-                        </div>
+                        <Link
+                          to="/discipline"
+                          className="text-sm font-medium text-gray-900 hover:text-indigo-900"
+                        >
+                          UI дизайн
+                        </Link>
                         <div className="text-sm text-gray-500">
                           Создание интерфейсов
                         </div>
@@ -158,9 +164,12 @@ export default function Disciplines() {
                         />
                       </div>
                       <div className="ml-4">
-                        <div className="text-sm font-medium text-gray-900">
+                        <Link
+                          to="/discipline"
+                          className="text-sm font-medium text-gray-900 hover:text-indigo-900"
+                        >
                           Методы Data Mining
-                        </div>
+                        </Link>
                         <div className="text-sm text-gray-500">Оптимизация</div>
                       </div>
                     </div>
@@ -249,9 +258,12 @@ export default function Disciplines() {
                         />
                       </div>
                       <div className="ml-4">
-                        <div className="text-sm font-medium text-gray-900">
+                        <Link
+                          to="/discipline"
+                          className="text-sm font-medium text-gray-900 hover:text-indigo-900"
+                        >
                           Организация ЭВМ
-                        </div>
+                        </Link>
                         <div className="text-sm text-gray-500">Основы</div>
                       </div>
                     </div>
@@ -281,12 +293,12 @@ export default function Disciplines() {
                     </span>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                    <a
-                      href="#"
+                    <Link
+                      to="/discipline"
                       className="text-indigo-600 hover:text-indigo-900"
                     >
                       Открыть
-                    </a>
+                    </Link>
                   </td>
                 </tr>
 
@@ -301,9 +313,12 @@ export default function Disciplines() {
                         />
                       </div>
                       <div className="ml-4">
-                        <div className="text-sm font-medium text-gray-900">
+                        <Link
+                          to="/discipline"
+                          className="text-sm font-medium text-gray-900 hover:text-indigo-900"
+                        >
                           Паттерны проектирования
-                        </div>
+                        </Link>
                         <div className="text-sm text-gray-500">
                           Программирование
                         </div>
@@ -335,12 +350,12 @@ export default function Disciplines() {
                     </span>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                    <a
-                      href="#"
+                    <Link
+                      to="/discipline"
                       className="text-indigo-600 hover:text-indigo-900"
                     >
                       Открыть
-                    </a>
+                    </Link>
                   </td>
                 </tr>
 
@@ -355,9 +370,12 @@ export default function Disciplines() {
                         />
                       </div>
                       <div className="ml-4">
-                        <div className="text-sm font-medium text-gray-900">
+                        <Link
+                          to="/discipline"
+                          className="text-sm font-medium text-gray-900 hover:text-indigo-900"
+                        >
                           Системное ПО
-                        </div>
+                        </Link>
                         <div className="text-sm text-gray-500">
                           Администрирование
                         </div>
@@ -389,12 +407,12 @@ export default function Disciplines() {
                     </span>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                    <a
-                      href="#"
+                    <Link
+                      to="/discipline"
                       className="text-indigo-600 hover:text-indigo-900"
                     >
                       Открыть
-                    </a>
+                    </Link>
                   </td>
                 </tr>
               </tbody>

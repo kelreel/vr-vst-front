@@ -33,4 +33,9 @@
   }
 }
 
+
+.react-calendar {
+  border: none !important;
+}
+
 @tailwind utilities;

@@ -6,6 +6,8 @@ import Intro from "./Intro";
 import Login from "./Login";
 import Register from "./Register";
 import Lesson from "./Lesson";
+import Profile from "./Profile";
+import Calendar from "./Calendar";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -34,6 +36,12 @@ function App() {
           </Route>
           <Route path="/lesson">
             <Lesson />
+          </Route>
+          <Route path="/profile">
+            <Profile />
+          </Route>
+          <Route path="/calendar">
+            <Calendar />
           </Route>
           <Route path="/">
             <Intro />
